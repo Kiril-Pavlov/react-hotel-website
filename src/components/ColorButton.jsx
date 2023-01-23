@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ColorButton = () => {
+const ColorButton = ({value}) => {
   return (
-    <div>ColorButton</div>
+    <div className='bg-redish text-white font-btnFont'>{value}</div>
   )
 }
 
