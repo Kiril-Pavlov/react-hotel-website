@@ -9,7 +9,7 @@ const Header = () => {
     <header className='fixed h-24 w-full flex items-center justify-between text-amber-700 bg-black/80'>
         <Logo/>
         <Navbar/>
-        <div>
+        <div className='flex flex-row gap-5 mx-10'>
             <CartModal/>
             <ColorButton value='book now'/>
         </div>

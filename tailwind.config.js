@@ -7,7 +7,8 @@ module.exports = {
         btnFont: "'Cormorant Garamond', serif"
       },
       colors: {
-        redish: '#FF0000'
+        primaryClr: 'hsl(34, 40%, 53%)',
+        primaryDark: 'hsl(34, 40%, 45%)'
       }
     },
   },
