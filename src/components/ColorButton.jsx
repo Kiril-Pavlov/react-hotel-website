@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const ColorButton = ({value}) => {
+const ColorButton = ({text, link}) => {
   return (
-    <div className='bg-primaryClr hover:bg-primaryDark py-5 px-10 text-white hover:text-black font-btnFont uppercase duration-500'>{value}</div>
+    <Link to={link} className='bg-primaryClr hover:bg-primaryDark py-5 px-10 text-white hover:text-black font-btnFont uppercase duration-500'>
+      {text}
+    </Link>
   )
 }
 

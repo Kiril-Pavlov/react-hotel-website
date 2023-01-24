@@ -11,7 +11,7 @@ const Header = () => {
         <Navbar/>
         <div className='flex flex-row gap-5 mx-10'>
             <CartModal/>
-            <ColorButton value='book now'/>
+            <ColorButton text='book now' link='/'/>
         </div>
     </header>
   )
