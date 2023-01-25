@@ -8,7 +8,8 @@ module.exports = {
       },
       colors: {
         primaryClr: 'hsl(34, 40%, 53%)',
-        primaryDark: 'hsl(34, 40%, 45%)'
+        primaryDarker: 'hsl(34, 40%, 45%)',
+        darkLighter: 'hsl(213, 6%, 35%)'
       }
     },
   },
