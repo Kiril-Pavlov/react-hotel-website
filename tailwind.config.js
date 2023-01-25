@@ -10,7 +10,10 @@ module.exports = {
         primaryClr: 'hsl(34, 40%, 53%)',
         primaryDarker: 'hsl(34, 40%, 45%)',
         darkLighter: 'hsl(213, 6%, 35%)'
-      }
+      },
+      backgroundImage: {
+        'hero': "url('/src/assets/home-hero.jpg')",
+      },
     },
   },
   plugins: [],

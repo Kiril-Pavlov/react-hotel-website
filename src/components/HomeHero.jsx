@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeHero = () => {
   return (
-    <div>HomeHero</div>
+    <div className="w-full h-screen bg-cover bg-center bg-hero animate-resize">HomeHero</div>
   )
 }
 
