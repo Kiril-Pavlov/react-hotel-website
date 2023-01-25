@@ -6,7 +6,7 @@ import ColorButton from './ColorButton'
 
 const Header = () => {
   return (
-    <header className='fixed h-24 w-full flex items-center justify-between text-amber-700 bg-black/80'>
+    <header className='fixed h-24 w-full flex items-center justify-between text-amber-700 border-b-2'>
         <Logo/>
         <Navbar/>
         <div className='flex flex-row gap-5 mx-10'>
