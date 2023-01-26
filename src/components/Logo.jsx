@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+
+import logoImg from "../assets/logo.svg";
 
 const Logo = () => {
   return (
-    <div className='mx-10'>Logo</div>
-  )
-}
+    <div className="flex items-center justify-center mx-10">
+      <img src={logoImg} alt="Logo" className="w-48" />
+    </div>
+  );
+};
 
-export default Logo
+export default Logo;

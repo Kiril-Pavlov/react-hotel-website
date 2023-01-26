@@ -5,7 +5,7 @@ import { links } from "../data/links";
 
 const Navbar = () => {
   return (
-    <nav className="hidden md:flex gap-2">
+    <nav className="hidden md:flex md:items-center md:justify-center gap-2">
       {links.map((link) => (
         <div className="py-1 group" key={link.linkName}>
           <Link to={link.linkTo} className="py-5 px-5 md:cursor-pointer">
