@@ -14,6 +14,16 @@ module.exports = {
       backgroundImage: {
         'hero': "url('/src/assets/home-hero.jpg')",
       },
+      keyframes: {
+        zoom: {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+          '100%': { transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        'background-zoom': 'zoom 20s linear infinite',
+      },
     },
   },
   plugins: [],
