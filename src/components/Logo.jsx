@@ -4,7 +4,7 @@ import logoImg from "../assets/logo.svg";
 
 const Logo = () => {
   return (
-    <div className="flex items-center justify-center mx-10">
+    <div className="flex items-center justify-center ml-10">
       <img src={logoImg} alt="Logo" className="w-48" />
     </div>
   );
