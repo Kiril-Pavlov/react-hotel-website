@@ -5,10 +5,10 @@ import { links } from "../data/links";
 
 const Navbar = () => {
   return (
-    <nav className="hidden md:flex md:items-center md:justify-center gap-2">
+    <nav className="hidden lg:flex md:items-center md:justify-center gap-1">
       {links.map((link) => (
         <div className="py-1 group" key={link.linkName}>
-          <Link to={link.linkTo} className="py-5 px-5 md:cursor-pointer text-white font-normal hover:text-primaryClr duration-500">
+          <Link to={link.linkTo} className="py-5 px-2 md:cursor-pointer text-white font-normal hover:text-primaryClr duration-500">
             {link.linkName}
           </Link>
           {link.submenu && (

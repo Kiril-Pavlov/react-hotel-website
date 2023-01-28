@@ -1,20 +1,22 @@
-import React from 'react'
-import Logo from './Logo'
-import Navbar from './Navbar'
-import CartModal from './CartModal'
-import ColorButton from './ColorButton'
+import React from "react";
+import Logo from "./Logo";
+import Navbar from "./Navbar";
+import CartModal from "./CartModal";
+import ColorButton from "./ColorButton";
 
 const Header = () => {
   return (
-    <header className='bg-black/20 fixed h-24 w-full flex items-center justify-between text-amber-700 z-10'>
-        <Logo/>
-        <Navbar/>
-        <div className='flex flex-row gap-5 mx-10'>
-            <CartModal/>
-            <ColorButton text='book now' link='/'/>
+    <header className="bg-black/20 fixed h-24 w-full flex items-center justify-between text-amber-700 z-10">
+      <Logo />
+      <Navbar />
+      <div className="flex flex-row gap-5 mx-5">
+        <CartModal />
+        <div className="hidden lg:flex">
+          <ColorButton text="book now" link="/" />
         </div>
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
