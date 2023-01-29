@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import CartModal from "./CartModal";
 import ColorButton from "./ColorButton";
 
+import {GiHamburgerMenu} from 'react-icons/gi'
+
 const Header = () => {
   return (
     <header className="bg-black/20 fixed h-24 w-full flex items-center justify-between text-amber-700 z-10">
@@ -13,6 +15,9 @@ const Header = () => {
         <CartModal />
         <div className="hidden lg:flex">
           <ColorButton text="book now" link="/" />
+        </div>
+        <div className="flex lg:hidden">
+          <GiHamburgerMenu  size={25} fill='white'/>
         </div>
       </div>
     </header>
