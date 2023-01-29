@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import Navbar from "./Navbar";
 import CartModal from "./CartModal";
 import ColorButton from "./ColorButton";
+import NavbarMobile from "./NavbarMobile";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -26,6 +27,7 @@ const Header = () => {
           )}
         </div>
       </div>
+      <NavbarMobile hamStatus={isOpen} setHamStatus={setIsOpen}/>
     </header>
   );
 };
