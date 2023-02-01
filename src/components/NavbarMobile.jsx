@@ -48,7 +48,7 @@ const NavbarMobile = ({ hamStatus, setHamStatus }) => {
               <div>
                 {link.sublinks.map((sublink) => (
                   <Link key={sublink.sublinkName} to={sublink.sublinkTo}
-                  className={`${activeLink === link.linkName ? "scale-x-100 block" : "scale-x-0 hidden"} flex items-center justify-center p-2 transition-all duration-300`}
+                  className={`${activeLink === link.linkName ? "scale-x-100 block" : "scale-x-0 hidden"} flex items-center justify-center p-2 transition-all duration-300 text-white font-normal hover:text-primaryClr hover:bg-black/20`}
                   >
                     {sublink.sublinkName}
                   </Link>
