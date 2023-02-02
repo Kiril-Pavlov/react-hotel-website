@@ -29,9 +29,9 @@ const Footer = () => {
           6 images
         </div>
       </div>
-      <div>
-        <div>Copyright</div>
-        <div>Developed by</div>
+      <div className='bg-black flex flex-col lg:flex-row items-center justify-center lg:justify-between text-white font-normal p-4 gap-2'>
+        <div>©2023 Kiril's Hotel. All Rights Reserved.</div>
+        <div>Developed by: <a href="https://pavlov.mk/">Pavlov Kiril</a></div>
       </div>
     </footer>
   )
