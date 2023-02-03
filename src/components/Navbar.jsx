@@ -21,7 +21,7 @@ const Navbar = () => {
                   <Link
                     to={sublink.sublinkTo}
                     key={sublink.sublinkName}
-                    className="text-white text-left"
+                    className="text-white text-left font-normal hover:text-primaryClr duration-500"
                   >
                     {sublink.sublinkName}
                   </Link>
