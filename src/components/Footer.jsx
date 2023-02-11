@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { links } from "../data/links";
 import { footerGalery } from "../data/footerGalery";
@@ -21,13 +22,23 @@ const Footer = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:w-2/3">
           <div className="text-white flex flex-col gap-5">
-            <div className="text-xl lg:text-3xl font-normal font-btnFont text-center lg:text-left">
+            <div className="text-2xl lg:text-3xl font-normal font-btnFont text-center lg:text-left">
               Menu
             </div>
-            <ul className="flex flex-col gap-5 mb-5 font-normal"></ul>
+            <ul className="flex flex-col gap-5 mb-12 font-normal lg:text-left">
+              {links.map((link=>(
+                <Link
+                to={link.linkTo}
+                key={link.linkName}
+                className="hover:text-primaryClr duration-500"
+              >
+                {link.linkName}
+              </Link>
+              )))}
+            </ul>
           </div>
           <div className="text-white flex flex-col gap-5">
-            <div className="text-xl lg:text-3xl font-normal font-btnFont text-center lg:text-left">
+            <div className="text-2xl lg:text-3xl font-normal font-btnFont text-center lg:text-left">
               Meet Us
             </div>
             <ul className="flex flex-col gap-5 mb-12 font-normal lg:text-left duration-500">
@@ -37,7 +48,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="text-white flex flex-col gap-5">
-            <div className="text-xl lg:text-3xl font-normal font-btnFont text-center lg:text-left">
+            <div className="text-2xl lg:text-3xl font-normal font-btnFont text-center lg:text-left">
               Galery
             </div>
             <div className="grid grid-cols-3 gap-2">
