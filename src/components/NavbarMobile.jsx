@@ -14,7 +14,7 @@ const NavbarMobile = ({ hamStatus, setHamStatus }) => {
     <div
       className={`${
         hamStatus ? "scale-x-100" : "scale-x-0"
-      } lg:hidden absolute w-10/12 left-[8.33%] top-28 bg-black/80 duration-300`}
+      } lg:hidden absolute w-10/12 left-[8.33%] top-28 bg-black/95 duration-300`}
     >
       <div className="flex flex-col p-3 gap-2">
         {links.map((link) => (

@@ -19,7 +19,7 @@ const HomeHero = () => {
         alt=""
         className="absolute lg:hidden animate-background-zoom h-full object-cover z-0"
       />
-      <div className="absolute z-10 w-full h-full bg-black/30">
+      <div className="absolute z-5 w-full h-full bg-black/30">
         <div className="max-w-5xl mx-auto px-5 flex flex-col justify-center h-full lg:flex-row lg:items-center gap-10">
           <div className="border-2 lg:w-7/12">
             <div>stars</div>
