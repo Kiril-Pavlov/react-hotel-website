@@ -5,6 +5,7 @@ import ColorButton from "./ColorButton"
 import heroImg from "../assets/home-hero.jpg";
 import heroImgMobile from "../assets/home-hero-mobile.jpg";
 
+import { AiFillStar } from 'react-icons/ai'
 const HomeHero = () => {
   return (
     <div className="w-full h-screen relative overflow-hidden bg-black">
@@ -19,12 +20,14 @@ const HomeHero = () => {
         alt=""
         className="absolute lg:hidden animate-background-zoom h-full object-cover z-0"
       />
-      <div className="absolute z-5 w-full h-full bg-black/30">
+      <div className="absolute z-5 w-full h-full bg-black/40">
         <div className="max-w-5xl mx-auto px-5 flex flex-col justify-center h-full lg:flex-row lg:items-center gap-10">
-          <div className="border-2 lg:w-7/12">
-            <div>stars</div>
-            <div>title</div>
-            <div>text</div>
+          <div className="lg:w-7/12 flex flex-col gap-4">
+            <div className="flex gap-1 text-primaryClr bg-white/50 w-fit p-1 rounded-full">
+              <AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/>
+            </div>
+            <div className="text-left text-4xl lg:text-5xl font-btnFont text-white font-normal">Welcome to Kiril's Place <br /> 5 Star Hotel</div>
+            <div className="text-left text-md w-11/12 text-white font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nesciunt incidunt aliquid quis provident</div>
           </div>
           <div className="lg:w-5/12 bg-blackClr p-5 flex flex-col gap-8">
             <div>
