@@ -29,30 +29,30 @@ const HomeHero = () => {
             <div className="text-left text-4xl lg:text-5xl font-btnFont text-white font-normal">Welcome to Kiril's Place <br /> 5 Star Hotel</div>
             <div className="text-left text-md w-11/12 text-white font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nesciunt incidunt aliquid quis provident</div>
           </div>
-          <div className="lg:w-5/12 bg-blackClr p-5 flex flex-col gap-8">
+          <div className="lg:w-5/12 bg-blackClr p-5 flex flex-col gap-6 lg:gap-8">
             <div>
               <label htmlFor="" className="text-white flex flex-col gap-2 text-left font-normal w-full">
                 Check-in
-                <input type="date" name="" id="" className="bg-lightBlackClr h-10 py-1 px-3 w-full"/>
+                <input type="date" name="" id="" className="bg-lightBlackClr h-8 lg:h-10 py-1 px-3 w-full"/>
               </label>
             </div>
             <div>
               <label htmlFor="" className="text-white flex flex-col gap-2 text-left font-normal w-full">
                 Check-out
-                <input type="date" name="" id="" className="bg-lightBlackClr h-10 py-1 px-3 w-full"/>
+                <input type="date" name="" id="" className="bg-lightBlackClr h-8 lg:h-10 py-1 px-3 w-full"/>
               </label>
             </div>
             <div className="grid grid-cols-2 gap-4 w-full">
               <div>
                 <label htmlFor="" className="text-white flex flex-col gap-2 text-left font-normal">
                   Adults
-                  <input type="number" name="" id="" className="bg-lightBlackClr h-10 py-1 px-3"/>
+                  <input type="number" name="" id="" className="bg-lightBlackClr h-8 lg:h-10 py-1 px-3"/>
                 </label>
               </div>
               <div>
                 <label htmlFor="" className="text-white flex flex-col gap-2 text-left font-normal">
                   Children
-                  <input type="number" name="" id="" className="bg-lightBlackClr h-10 py-1 px-3"/>
+                  <input type="number" name="" id="" className="bg-lightBlackClr h-8 lg:h-10 py-1 px-3"/>
                 </label>
               </div>
             </div>
