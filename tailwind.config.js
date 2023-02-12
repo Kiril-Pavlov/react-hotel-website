@@ -12,7 +12,8 @@ module.exports = {
         primaryDarker: 'hsl(34, 40%, 45%)',
         darkLighter: 'hsl(213, 6%, 35%)',
         fontClrGrey: '#7a7a7a',
-        blackClr: '#090909'
+        blackClr: '#101010',
+        lightBlackClr: '#202020'
       },
       backgroundImage: {
         'hero': "url('/src/assets/home-hero.jpg')",
