@@ -33,13 +33,13 @@ const HomeHero = () => {
             <div>
               <label htmlFor="" className="text-white flex flex-col gap-2 text-left font-normal w-full">
                 Check-in
-                <input type="date" name="" id="" className="bg-lightBlackClr h-10 py-1 px-3"/>
+                <input type="date" name="" id="" className="bg-lightBlackClr h-10 py-1 px-3 w-full"/>
               </label>
             </div>
             <div>
               <label htmlFor="" className="text-white flex flex-col gap-2 text-left font-normal w-full">
                 Check-out
-                <input type="date" name="" id="" className="bg-lightBlackClr h-10 py-1 px-3"/>
+                <input type="date" name="" id="" className="bg-lightBlackClr h-10 py-1 px-3 w-full"/>
               </label>
             </div>
             <div className="grid grid-cols-2 gap-4 w-full">
