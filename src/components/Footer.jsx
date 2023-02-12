@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { links } from "../data/links";
 import { footerGalery } from "../data/footerGalery";
+import { socials } from "../data/socials";
 
 import Logo from "./Logo";
 
@@ -18,7 +19,13 @@ const Footer = () => {
             voluptatem porro itaque esse impedit cum, ea sed incidunt
             consequatur laborum dolorem?
           </div>
-          <div className="text-white">Socials</div>
+          <div className="text-white">
+            {socials.map(social=>(
+              <Link to={social.link} key={social.name}>
+                {social.element}
+              </Link>
+            ))}
+          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:w-2/3">
           <div className="text-white flex flex-col gap-5">
