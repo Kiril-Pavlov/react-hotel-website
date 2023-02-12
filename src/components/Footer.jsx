@@ -10,7 +10,7 @@ import Logo from "./Logo";
 const Footer = () => {
   return (
     <footer className="bg-blackClr">
-      <div className="flex flex-col lg:flex lg:flex-row px-5 py-5 lg:py-10 max-w-5xl mx-auto gap-20">
+      <div className="flex flex-col lg:flex lg:flex-row px-5 py-5 lg:py-20 max-w-5xl mx-auto gap-20">
         <div className="flex flex-col items-center lg:items-start lg:w-1/3 gap-5">
           <Logo className />
           <div className="text-fontClrGrey lg:text-left">
@@ -19,11 +19,11 @@ const Footer = () => {
             voluptatem porro itaque esse impedit cum, ea sed incidunt
             consequatur laborum dolorem?
           </div>
-          <div className="text-white">
+          <div className="text-white flex flex-row gap-2">
             {socials.map(social=>(
-              <Link to={social.link} key={social.name}>
+              <a href={social.link} key={social.name} className="w-7 h-7 border-2 border-primaryClr flex items-center justify-center rounded-full hover:bg-white hover:text-black hover:rotate-[360deg] duration-500 ease-in-out">
                 {social.element}
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="text-2xl lg:text-3xl font-normal font-btnFont text-center lg:text-left">
               Galery
             </div>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 gap-2">
               {footerGalery.map((image)=>(
                 <img src={image.url} alt={image.description} key={image.description} />
               ))}
