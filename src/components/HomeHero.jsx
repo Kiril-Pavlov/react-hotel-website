@@ -21,7 +21,7 @@ const HomeHero = () => {
         className="absolute lg:hidden animate-background-zoom h-full object-cover z-0"
       />
       <div className="absolute z-5 w-full h-full bg-black/40">
-        <div className="max-w-5xl mx-auto px-5 pt-28 flex flex-col justify-center h-full lg:flex-row lg:items-center gap-10">
+        <div className="max-w-5xl mx-auto px-5 pt-20 lg:pt-28 flex flex-col justify-center h-full lg:flex-row lg:items-center gap-10">
           <div className="lg:w-7/12 flex flex-col gap-4">
             <div className="flex gap-1 text-primaryClr bg-white/50 w-fit p-1 rounded-full">
               <AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/>

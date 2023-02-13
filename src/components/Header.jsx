@@ -11,7 +11,7 @@ import { AiOutlineClose } from "react-icons/ai";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-black/20 fixed h-24 w-full flex items-center justify-between z-10 px-8">
+    <header className="bg-black/20 fixed h-16 lg:h-24 w-full flex items-center justify-between z-10 px-8">
       <Logo />
       <Navbar />
       <div className="flex flex-row gap-5">

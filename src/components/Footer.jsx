@@ -19,7 +19,7 @@ const Footer = () => {
             voluptatem porro itaque esse impedit cum, ea sed incidunt
             consequatur laborum dolorem?
           </div>
-          <div className="text-white flex flex-row gap-2">
+          <div className="text-white flex flex-row gap-2 pb-4">
             {socials.map(social=>(
               <a href={social.link} key={social.name} className="w-7 h-7 border-2 border-primaryClr flex items-center justify-center rounded-full hover:bg-white hover:text-black hover:rotate-[360deg] duration-500 ease-in-out">
                 {social.element}
