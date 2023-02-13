@@ -26,7 +26,7 @@ const HomeHero = () => {
             <div className="flex gap-1 text-primaryClr bg-white/50 w-fit p-1 rounded-full">
               <AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/><AiFillStar/>
             </div>
-            <div className="text-left text-4xl lg:text-5xl font-btnFont text-white font-normal">Welcome to Kiril's Place <br /> 5 Star Hotel</div>
+            <div className="text-left text-3xl lg:text-5xl font-btnFont text-white font-normal">Welcome to Kiril's Place <br /> 5 Star Hotel</div>
             <div className="text-left text-md w-11/12 text-white font-normal  hidden lg:block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nesciunt incidunt aliquid quis provident</div>
           </div>
           <div className="lg:w-5/12 bg-blackClr p-5 flex flex-col gap-6 lg:gap-8">
