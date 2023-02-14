@@ -18,7 +18,7 @@ const NavbarMobile = ({ hamStatus, setHamStatus }) => {
     >
       <div className="flex flex-col p-3 gap-2">
         {links.map((link) => (
-          <div>
+          <div key={link.linkName}>
             <div className="flex flex-row items-center justify-between gap-2">
               <Link
                 to={link.linkTo}
