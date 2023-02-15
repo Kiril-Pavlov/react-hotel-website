@@ -27,7 +27,7 @@ const ShortAbout = () => {
     },
   ];
   return (
-    <div className="bg-lightBlackClr">
+    <div className="bg-blackClr">
       <div className="max-w-5xl px-5 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-10 justify-between -top-12 relative">
         {services.map((service) => (
           <div
@@ -40,31 +40,35 @@ const ShortAbout = () => {
         ))}
       </div>
       <div className="max-w-5xl  px-5 mx-auto flex gap-5 flex-wrap">
-        <div>
-          <img src={img1} alt="lobby" />
-        </div>
-        <div>
-          <div>We have 17+ years of Experience</div>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-            consequatur quos dolore! Laudantium, impedit maiores odit nemo
-            necessitatibus consequatur distinctio delectus vel ratione quis.
-            Quae assumenda quaerat facere illum mollitia.
+        <div className="flex flex-col lg:flex-row gap-5">
+          <div className="lg:w-1/2">
+            <img src={img1} alt="lobby" className="w-full overflow-hidden"/>
           </div>
-          <div>button</div>
-        </div>
-        <div>
-          <div>Start your Amazing Adventure!</div>
-          <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-            consequatur quos dolore! Laudantium, impedit maiores odit nemo
-            necessitatibus consequatur distinctio delectus vel ratione quis.
-            Quae assumenda quaerat facere illum mollitia.
+          <div className="flex flex-col items-center justify-center gap-5 w-full lg:w-1/2 ">
+            <div className="text-4xl text-left w-full font-btnFont text-white">We have 17+ years of Experience</div>
+            <div className="text-left text-fontClrGrey font-normal">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
+              consequatur quos dolore! Laudantium, impedit maiores odit nemo
+              necessitatibus consequatur distinctio delectus vel ratione quis.
+              Quae assumenda quaerat facere illum mollitia.
+            </div>
+            <div>button</div>
           </div>
-          <div>button</div>
         </div>
-        <div>
-          <img src={img2} alt="" />
+        <div className="flex flex-col-reverse lg:flex-row gap-5">
+          <div className="flex flex-col items-center justify-center gap-5 w-full lg:w-1/2 ">
+            <div  className="text-4xl text-left w-full font-btnFont text-white">Start your Amazing Adventure!</div>
+            <div className="text-left text-fontClrGrey font-normal">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
+              consequatur quos dolore! Laudantium, impedit maiores odit nemo
+              necessitatibus consequatur distinctio delectus vel ratione quis.
+              Quae assumenda quaerat facere illum mollitia.
+            </div>
+            <div>button</div>
+          </div>
+          <div  className="lg:w-1/2">
+            <img src={img2} alt=""  className="w-full overflow-hidden"/>
+          </div>
         </div>
       </div>
     </div>
