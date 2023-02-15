@@ -1,5 +1,7 @@
 import React from "react";
 
+import BorderButton from "./BorderButton";
+
 import { FaShuttleVan, FaSwimmingPool } from "react-icons/fa";
 import { MdOutlineRoomService } from "react-icons/md";
 import { GiVideoCamera } from "react-icons/gi";
@@ -52,7 +54,9 @@ const ShortAbout = () => {
               necessitatibus consequatur distinctio delectus vel ratione quis.
               Quae assumenda quaerat facere illum mollitia.
             </div>
-            <div>button</div>
+            <div className="flex items-left w-full my-5">
+                <BorderButton text="more about us" link="/"/>
+            </div>
           </div>
         </div>
         <div className="flex flex-col-reverse lg:flex-row gap-5">
@@ -64,7 +68,9 @@ const ShortAbout = () => {
               necessitatibus consequatur distinctio delectus vel ratione quis.
               Quae assumenda quaerat facere illum mollitia.
             </div>
-            <div>button</div>
+            <div className="flex items-left w-full my-5">
+                <BorderButton text="choose a room" link="/"/>
+            </div>
           </div>
           <div  className="lg:w-1/2">
             <img src={img2} alt=""  className="w-full overflow-hidden"/>
