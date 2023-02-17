@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="text-2xl lg:text-3xl font-normal font-btnFont text-center lg:text-left">
               Galery
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {footerGalery.map((image)=>(
                 <img src={image.url} alt={image.description} key={image.description} className="h-16 w-full object-cover"/>
               ))}
