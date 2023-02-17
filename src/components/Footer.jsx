@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 gap-2">
               {footerGalery.map((image)=>(
-                <img src={image.url} alt={image.description} key={image.description} />
+                <img src={image.url} alt={image.description} key={image.description} className="h-16 w-full object-cover"/>
               ))}
             </div>
           </div>
