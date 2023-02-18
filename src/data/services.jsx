@@ -5,7 +5,7 @@ import img4 from "../assets/free-services-4.jpg"
 import img5 from "../assets/free-services-5.jpg"
 import img6 from "../assets/free-services-6.jpg"
 
-export const footerGalery = [
+export const services = [
     {
         url: img1,
         tag: "Spa room"

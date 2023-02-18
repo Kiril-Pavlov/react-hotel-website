@@ -1,12 +1,12 @@
 import React from 'react'
 
-const servicesCard = ({tag, image}) => {
+const ServicesCard = ({tag, url}) => {
   return (
-    <div className='flex items-center justify-center w-96 h-52 bg-slate-400 my-16 overflow-hidden relative'>
-        <span className='font-bold text-7xl text-yellow-100 absolute'>{tag}</span>
-        <img src={image} alt="content" className='w-full '/>
+    <div className='flex items-center justify-center w-full h-52 bg-slate-400 my-16 overflow-hidden relative'>
+        <span className='font-bold text-md text-yellow-100 absolute top-2 right-2 bg-black p-2'>{tag}</span>
+        <img src={url} alt="content" className='h-full object-cover'/>
     </div>
   )
 }
 
-export default servicesCard
+export default ServicesCard
