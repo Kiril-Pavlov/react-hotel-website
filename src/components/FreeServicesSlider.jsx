@@ -4,12 +4,14 @@ import ServicesCard from "./ServicesCard";
 
 import { services } from "../data/services";
 
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 const FreeServicesSlider = () => {
   // states for active slider and number of sliders on screen
   const [activeSlider, setActiveSlider] = useState(0);
   const [slidersNumber, setSlidersNumber] = useState(3);
 
-      // useEffect hook to handle screen size at page load
+  // useEffect hook to handle screen size at page load
   useEffect(() => {
     handleScreenSizes();
   }, []);
@@ -23,18 +25,52 @@ const FreeServicesSlider = () => {
     } else {
       setSlidersNumber(3);
     }
-  }
+  };
 
-    // slice arrays for card mapping
-    let modifiedSlides = services.slice(activeSlider,activeSlider+slidersNumber)
+  // handle shift to left by one
+  const handleShiftLeft = () => {
+    if (activeSlider === 0) {
+      setActiveSlider(0);
+    } else {
+      setActiveSlider(activeSlider - 1);
+    }
+  };
+
+  //handles shift to right by one
+  const handleShiftRight = () => {
+    if (activeSlider === services.length - slidersNumber) {
+      setActiveSlider(activeSlider);
+    } else {
+      setActiveSlider(activeSlider + 1);
+    }
+  };
+
+  // slice arrays for card mapping
+  let modifiedSlides = services.slice(
+    activeSlider,
+    activeSlider + slidersNumber
+  );
 
   return (
-    <div className="flex items-center justify-between gap-5">
-      {modifiedSlides.map((card) => (
-        <div>
-          <ServicesCard tag={card.tag} url={card.url} />
-        </div>
-      ))}
+    <div>
+      <div className="flex items-center justify-between gap-5">
+        {modifiedSlides.map((card) => (
+          <div>
+            <ServicesCard tag={card.tag} url={card.url} />
+          </div>
+        ))}
+      </div>
+      <div>
+
+      <div>
+        <button onClick={handleShiftLeft}>
+          <FaChevronLeft size={40} fill="white" />
+        </button>
+        <button onClick={handleShiftRight}>
+          <FaChevronRight size={40} fill="white" />
+        </button>
+      </div>
+      </div>
     </div>
   );
 };
