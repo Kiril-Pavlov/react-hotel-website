@@ -1,4 +1,5 @@
 import React from 'react'
+import FreeServices from '../components/FreeServices'
 
 //components
 import HomeHero from '../components/HomeHero'
@@ -9,6 +10,7 @@ const Home = () => {
     <div>
       <HomeHero/>
       <ShortAbout/>
+      <FreeServices/>
     </div>
   )
 }
