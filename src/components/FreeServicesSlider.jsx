@@ -60,16 +60,18 @@ const FreeServicesSlider = () => {
           </div>
         ))}
       </div>
-      <div>
-
-      <div>
-        <button onClick={handleShiftLeft}>
-          <FaChevronLeft size={40} fill="white" />
-        </button>
-        <button onClick={handleShiftRight}>
-          <FaChevronRight size={40} fill="white" />
-        </button>
-      </div>
+      <div className="flex items-center justify-between max-w-5xl mx-auto pb-5 px-5">
+        <div className="text-white">
+            {activeSlider+1}/{services.length}
+        </div>
+        <div>
+          <button onClick={handleShiftLeft}>
+            <FaChevronLeft size={30} fill="white" />
+          </button>
+          <button onClick={handleShiftRight}>
+            <FaChevronRight size={30} fill="white" />
+          </button>
+        </div>
       </div>
     </div>
   );

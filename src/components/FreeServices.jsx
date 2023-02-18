@@ -10,7 +10,7 @@ const FreeServices = () => {
         <div className="text-center text-fontClrGrey font-semibold mb-10">
             Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem.
         </div>
-        <div className='border-2'>
+        <div>
             <FreeServicesSlider/>
         </div>
     </div>
