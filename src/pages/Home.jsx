@@ -4,6 +4,7 @@ import FreeServices from '../components/FreeServices'
 //components
 import HomeHero from '../components/HomeHero'
 import ShortAbout from '../components/ShortAbout'
+import Capacity from '../components/Capacity'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HomeHero/>
       <ShortAbout/>
       <FreeServices/>
+      <Capacity />
     </div>
   )
 }
