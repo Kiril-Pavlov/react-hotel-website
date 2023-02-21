@@ -4,7 +4,7 @@ import FreeServicesSlider from './FreeServicesSlider'
 const FreeServices = () => {
   return (
     <div  className="bg-blackClr py-20 px-5">
-        <div className="text-4xl lg:text-5xl text-center w-full font-btnFont text-white pb-5">
+        <div className="text-4xl lg:text-6xl text-center w-full font-btnFont text-white pb-5">
             Kiril's is waiting for you
         </div>
         <div className="text-center text-fontClrGrey font-semibold mb-10">
