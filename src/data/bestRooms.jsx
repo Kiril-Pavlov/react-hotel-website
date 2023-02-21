@@ -1,0 +1,58 @@
+import img1 from "../assets/b-room-1.jpg"
+
+export const bestRooms=[
+    {
+        name: "Deluxe room",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptates.",
+        price:"49",
+        adults:"4",
+        size:"95",
+        linkTo: "/",
+        img: img1,
+    },
+    {
+        name: "Deluxe room",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptates.",
+        price:"49",
+        adults:"4",
+        size:"95",
+        linkTo: "/",
+        img: img1,
+    },
+    {
+        name: "Deluxe room",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptates.",
+        price:"49",
+        adults:"4",
+        size:"95",
+        linkTo: "/",
+        img: img1,
+    },
+    {
+        name: "Deluxe room",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptates.",
+        price:"49",
+        adults:"4",
+        size:"95",
+        linkTo: "/",
+        img: img1,
+    },
+    {
+        name: "Deluxe room",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptates.",
+        price:"49",
+        adults:"4",
+        size:"95",
+        linkTo: "/",
+        img: img1,
+    },
+    {
+        name: "Deluxe room",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptates.",
+        price:"49",
+        adults:"4",
+        size:"95",
+        linkTo: "/",
+        img: img1,
+    },
+]
