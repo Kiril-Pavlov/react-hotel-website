@@ -23,7 +23,7 @@ const BestRoomsSlider = () => {
     } else if (window.innerWidth < 1200) {
       setSlidersNumber(2);
     } else {
-      setSlidersNumber(3);
+      setSlidersNumber(4);
     }
   };
 
@@ -57,6 +57,12 @@ const BestRoomsSlider = () => {
           <div key={room.name}>
             <BestRoomCard 
                 name={room.name} 
+                description={room.description}
+                price={room.price}
+                adults={room.adults}
+                size={room.size}
+                linkTo={room.linkTo}
+                img={room.img}
             />
           </div>
         ))}
