@@ -55,7 +55,7 @@ const FreeServicesSlider = () => {
     <div>
       <div className="flex items-center justify-between gap-5">
         {modifiedSlides.map((card) => (
-          <div>
+          <div  key={card.tag}>
             <ServicesCard tag={card.tag} url={card.url} />
           </div>
         ))}

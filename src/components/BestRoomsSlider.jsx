@@ -54,7 +54,7 @@ const BestRoomsSlider = () => {
     <div>
       <div className="flex items-center justify-between gap-5">
         {modifiedSlides.map((room) => (
-          <div>
+          <div key={room.name}>
             <BestRoomCard 
                 name={room.name} 
             />

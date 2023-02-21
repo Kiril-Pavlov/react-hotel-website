@@ -12,22 +12,22 @@ export const services = [
     },
     {
         url: img2,
-        tag: "Spa room"
+        tag: "View from the sea"
     },
     {
         url: img3,
-        tag: "Spa room"
+        tag: "Modern Room"
     },
     {
         url: img4,
-        tag: "Spa room"
+        tag: "West terrace"
     },
     {
         url: img5,
-        tag: "Spa room"
+        tag: "East terrace"
     },
     {
         url: img6,
-        tag: "Spa room"
+        tag: "Traditional bath"
     }
 ]
