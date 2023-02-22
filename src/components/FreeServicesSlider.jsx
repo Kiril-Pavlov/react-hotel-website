@@ -9,7 +9,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const FreeServicesSlider = () => {
   // states for active slider and number of sliders on screen
   const [activeSlider, setActiveSlider] = useState(0);
-  const [slidersNumber, setSlidersNumber] = useState(3);
+  const [slidersNumber, setSlidersNumber] = useState(4);
 
   // useEffect hook to handle screen size at page load
   useEffect(() => {
@@ -22,8 +22,10 @@ const FreeServicesSlider = () => {
       setSlidersNumber(1);
     } else if (window.innerWidth < 1200) {
       setSlidersNumber(2);
-    } else {
+    } else if (window.innerWidth < 1600) {
       setSlidersNumber(3);
+    } else {
+      setSlidersNumber(4);
     }
   };
 

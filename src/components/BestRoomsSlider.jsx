@@ -22,8 +22,10 @@ const BestRoomsSlider = () => {
       setSlidersNumber(1);
     } else if (window.innerWidth < 1200) {
       setSlidersNumber(2);
-    } else {
+    } else if (window.innerWidth < 1600) {
       setSlidersNumber(3);
+    } else {
+      setSlidersNumber(4);
     }
   };
 
