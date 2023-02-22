@@ -5,9 +5,9 @@ import ColorButton from "./ColorButton"
 const BestRoomCard = ({img , adults, size, name, description, price, linkTo}) => {
   return (
     <div className='w-full relative'>
-        <div className='w-full h-48 overflow-hidden'>
+        <div className='w-full h-40 overflow-hidden'>
             <img src={img} alt=""  className='object-cover w-full'/>
-            <div className='absolute top-40 bg-black text-white px-3 h-8 flex flex-row items-center gap-3 font-normal text-sm'>
+            <div className='absolute top-32 bg-black text-white px-3 h-8 flex flex-row items-center gap-3 font-normal text-sm'>
                 <div>Adults: {adults}</div>
                 <div>Size: {size}ft</div>
             </div>

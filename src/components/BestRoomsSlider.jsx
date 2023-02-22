@@ -23,7 +23,7 @@ const BestRoomsSlider = () => {
     } else if (window.innerWidth < 1200) {
       setSlidersNumber(2);
     } else {
-      setSlidersNumber(4);
+      setSlidersNumber(3);
     }
   };
 
@@ -51,8 +51,8 @@ const BestRoomsSlider = () => {
     activeSlider + slidersNumber
   );
   return (
-    <div>
-      <div className="flex items-center justify-between gap-5">
+    <div className='mt-5'>
+      <div className="flex items-center justify-between gap-5 mb-5">
         {modifiedSlides.map((room) => (
           <div key={room.name}>
             <BestRoomCard 

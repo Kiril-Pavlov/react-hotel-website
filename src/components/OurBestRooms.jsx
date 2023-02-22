@@ -18,7 +18,7 @@ const OurBestRooms = () => {
         </div>
         <BorderButton text="all rooms" link="/" />
       </div>
-      <div>
+      <div className="px-5">
         <BestRoomsSlider />
       </div>
     </div>
