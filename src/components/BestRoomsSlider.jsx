@@ -18,7 +18,7 @@ const BestRoomsSlider = () => {
 
   // function to handle number of cards depending on screen size
   const handleScreenSizes = () => {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 800) {
       setSlidersNumber(1);
     } else if (window.innerWidth < 1200) {
       setSlidersNumber(2);
@@ -52,7 +52,7 @@ const BestRoomsSlider = () => {
   );
   return (
     <div className='mt-5'>
-      <div className="flex items-center justify-between gap-5 mb-5">
+      <div className="flex items-center justify-between gap-5 mb-5 w-full">
         {modifiedSlides.map((room) => (
           <div key={room.name}>
             <BestRoomCard 

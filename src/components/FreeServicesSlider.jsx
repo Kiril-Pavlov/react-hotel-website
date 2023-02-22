@@ -18,7 +18,7 @@ const FreeServicesSlider = () => {
 
   // function to handle number of cards depending on screen size
   const handleScreenSizes = () => {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 800) {
       setSlidersNumber(1);
     } else if (window.innerWidth < 1200) {
       setSlidersNumber(2);
