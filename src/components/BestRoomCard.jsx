@@ -1,14 +1,27 @@
 import React from 'react'
 
-const BestRoomCard = ({img , adults, size }) => {
+import ColorButton from "./ColorButton"
+
+const BestRoomCard = ({img , adults, size, name, description, price, linkTo}) => {
   return (
-    <div className='border-2 w-full h-96 relative'>
+    <div className='w-full relative'>
         <div className='w-full h-48 overflow-hidden'>
             <img src={img} alt=""  className='object-cover w-full'/>
             <div className='absolute top-40 bg-black text-white px-3 h-8 flex flex-row items-center gap-3 font-normal text-sm'>
                 <div>Adults: {adults}</div>
                 <div>Size: {size}ft</div>
             </div>
+        </div>
+        <div className='bg-black p-5 flex flex-col gap-3 text-left'>
+          <div className='text-white font-btnFont text-3xl'>{name}</div>
+          <div className='text-fontClrGrey font-normal'>{description}</div>
+        </div>
+        <div className='flex items-center justify-between px-5 pb-5 bg-black'>
+          <div className='flex gap-2 text-lg'>
+            <div className='text-primaryClr'>€{price}</div>
+            <div className='text-fontClrGrey font-normal'>per night</div>  
+          </div>
+          <ColorButton text="book" url={linkTo} />
         </div>
     </div>
   )

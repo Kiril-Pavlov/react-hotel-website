@@ -29,7 +29,7 @@ const HomeHero = () => {
             <div className="text-left text-3xl lg:text-5xl font-btnFont text-white font-normal">Welcome to Kiril's Place <br /> 5 Star Hotel</div>
             <div className="text-left text-md w-11/12 text-white font-normal  hidden lg:block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nesciunt incidunt aliquid quis provident</div>
           </div>
-          <div className="lg:w-5/12 bg-blackClr p-5 flex flex-col gap-6 lg:gap-8">
+          <div className="max-w-lg mx-auto lg:w-5/12 bg-blackClr p-5 flex flex-col gap-6 lg:gap-8">
             <div>
               <label htmlFor="" className="text-white flex flex-col gap-2 text-left font-normal w-full">
                 Check-in
