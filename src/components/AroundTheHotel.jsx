@@ -3,6 +3,30 @@ import React from 'react'
 import BorderButton from "./BorderButton"
 
 const AroundTheHotel = () => {
+    let services = [
+        {
+            img:img1,
+            tag:"Free",
+            name:"Gym",
+            description:"Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…",
+            linkTo:"/"
+        },
+        {
+            img:img2,
+            tag:"10 euro per guest",
+            name:"Pool",
+            description:"Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…",
+            linkTo:"/"
+        },
+        {
+            img:img3,
+            tag:"Free",
+            name:"Lounge Bar",
+            description:"Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…",
+            linkTo:"/"
+        },
+    ]
+
   return (
     <div className="bg-blackClr">
       <div className=" pt-20 px-5 max-w-5xl mx-auto flex flex-col lg:flex-row items-start justify-between">
