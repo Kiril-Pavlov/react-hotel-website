@@ -2,6 +2,10 @@ import React from 'react'
 
 import BorderButton from "./BorderButton"
 
+import img1 from "../assets/service-1.jpg"
+import img2 from "../assets/service-2.jpg"
+import img3 from "../assets/service-3.jpg"
+
 const AroundTheHotel = () => {
     let services = [
         {
@@ -41,7 +45,12 @@ const AroundTheHotel = () => {
         </div>
         <BorderButton text="all services" link="/" />
       </div>
-      <div className="px-5">
+      <div className="px-5 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        {services.map((service)=>(
+            <div className='w-full h-92 overflow-hidden'>
+                <img src={service.img} alt="" className='h-full '/>
+            </div>
+        ))}
         
       </div>
     </div>
