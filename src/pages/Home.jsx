@@ -7,6 +7,7 @@ import ShortAbout from '../components/ShortAbout'
 import Capacity from '../components/Capacity'
 import OurBestRooms from '../components/OurBestRooms'
 import AroundTheHotel from '../components/AroundTheHotel'
+import Feedback from '../components/Feedback'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Capacity />
       <OurBestRooms />
       <AroundTheHotel />
+      <Feedback />
     </div>
   )
 }
