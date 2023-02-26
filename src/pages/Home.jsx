@@ -8,6 +8,7 @@ import Capacity from '../components/Capacity'
 import OurBestRooms from '../components/OurBestRooms'
 import AroundTheHotel from '../components/AroundTheHotel'
 import Feedback from '../components/Feedback'
+import Newsletter from '../components/Newsletter'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <OurBestRooms />
       <AroundTheHotel />
       <Feedback />
+      <Newsletter />
     </div>
   )
 }
