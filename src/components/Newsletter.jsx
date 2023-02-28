@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import BorderButton from './BorderButton'
+import BorderButton from "./BorderButton";
 
 const Newsletter = () => {
   return (
@@ -17,11 +17,9 @@ const Newsletter = () => {
         </div>
         <BorderButton text="all publications" link="/" />
       </div>
-      <div className="px-5">
-        
-      </div>
+      <div className="px-5"></div>
     </div>
-  )
-}
+  );
+};
 
-export default Newsletter
+export default Newsletter;
