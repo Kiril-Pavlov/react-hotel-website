@@ -48,7 +48,7 @@ const AroundTheHotel = () => {
       </div>
       <div className="px-5 grid grid-cols-1 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
         {services.map((service)=>(
-            <div className='w-full h-92 overflow-hidden relative group'>
+            <div key={service.name} className='w-full h-92 overflow-hidden relative group'>
                 <img src={service.img} alt="" className='h-full '/>
                 <div className='bg-black w-[90%] absolute bottom-5 left-[5%] h-20 group-hover:h-64 overflow-hidden duration-500'>
                     <div className='text-white font-btnFont text-3xl font-normal p-5'>{service.name}</div>

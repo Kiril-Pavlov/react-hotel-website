@@ -9,7 +9,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const BestRoomsSlider = () => {
       // states for active slider and number of sliders on screen
   const [activeSlider, setActiveSlider] = useState(0);
-  const [slidersNumber, setSlidersNumber] = useState(3);
+  const [slidersNumber, setSlidersNumber] = useState(1);
 
   // useEffect hook to handle screen size at page load
   useEffect(() => {
@@ -28,6 +28,7 @@ const BestRoomsSlider = () => {
       setSlidersNumber(4);
     }
   };
+
 
   // handle shift to left by one
   const handleShiftLeft = () => {
