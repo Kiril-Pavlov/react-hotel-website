@@ -46,7 +46,7 @@ const AroundTheHotel = () => {
         </div>
         <BorderButton text="all services" link="/" />
       </div>
-      <div className="px-5 grid grid-cols-1 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+      <div className="px-5 grid grid-cols-1 lg:grid-cols-3 gap-5 max-w-5xl mx-auto pb-10">
         {services.map((service)=>(
             <div key={service.name} className='w-full h-92 overflow-hidden relative group'>
                 <img src={service.img} alt="" className='h-full '/>
