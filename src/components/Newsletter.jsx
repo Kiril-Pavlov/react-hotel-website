@@ -46,7 +46,7 @@ const Newsletter = () => {
         </div>
         <BorderButton text="all publications" link="/" />
       </div>
-      <div className="px-5">
+      <div className="px-5 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
         {posts.map(post=>(
           <div>
             <div>{post.url}</div>
