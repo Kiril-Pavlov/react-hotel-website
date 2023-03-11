@@ -46,7 +46,19 @@ const Newsletter = () => {
         </div>
         <BorderButton text="all publications" link="/" />
       </div>
-      <div className="px-5"></div>
+      <div className="px-5">
+        {posts.map(post=>(
+          <div>
+            <div>{post.url}</div>
+            <div>
+              <div>{post.userAvatar}</div>
+              <div>{post.userName}</div>
+            </div>
+            <div>{post.title}</div>
+            <div>{post.paragraph}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
