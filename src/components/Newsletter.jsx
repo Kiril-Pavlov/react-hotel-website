@@ -46,10 +46,12 @@ const Newsletter = () => {
         </div>
         <BorderButton text="all publications" link="/" />
       </div>
-      <div className="px-5 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
+      <div className="px-5 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto gap-3">
         {posts.map(post=>(
-          <div>
-            <div>{post.url}</div>
+          <div className="max-w-xl border-2 group" key={post.title}>
+            <div className="h-40 overflow-hidden">
+              <img src={post.url} alt="" className="group-hover:scale-110 duration-500"/>
+            </div>
             <div>
               <div>{post.userAvatar}</div>
               <div>{post.userName}</div>
