@@ -2,36 +2,42 @@ import React from "react";
 
 import BorderButton from "./BorderButton";
 
-import img1 from "../assets/newsletter-1.jpg"
-import img2 from "../assets/newsletter-2.jpg"
-import img3 from "../assets/newsletter-3.jpg"
-import avatar1 from "../assets/avatar-1.jpg"
-
+import img1 from "../assets/newsletter-1.jpg";
+import img2 from "../assets/newsletter-2.jpg";
+import img3 from "../assets/newsletter-3.jpg";
+import avatar1 from "../assets/avatar-1.jpg";
 
 const Newsletter = () => {
   let posts = [
     {
-      url : img1,
+      url: img1,
       userName: "Beshteya",
       userAvatar: avatar1,
+      date: "December 21, 2021",
       title: "The Ultimate Guide to Traveling When You Have...",
-      paragraph: "Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…"
+      paragraph:
+        "Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…",
     },
     {
-      url : img2,
+      url: img2,
       userName: "Beshteya",
       userAvatar: avatar1,
+      date: "December 21, 2021",
       title: "The Best Travel Insurance Companies for Seniors",
-      paragraph: "Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…"
+      paragraph:
+        "Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…",
     },
     {
-      url : img3,
+      url: img3,
       userName: "Beshteya",
       userAvatar: avatar1,
+
+      date: "December 21, 2021",
       title: "18 Easy Steps for Planning Your Next Trip",
-      paragraph: "Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…"
+      paragraph:
+        "Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…",
     },
-  ]
+  ];
   return (
     <div className="bg-lightBlackClr">
       <div className=" pt-20 px-5 max-w-5xl mx-auto flex flex-col lg:flex-row items-start justify-between">
@@ -47,14 +53,27 @@ const Newsletter = () => {
         <BorderButton text="all publications" link="/" />
       </div>
       <div className="px-5 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto gap-3">
-        {posts.map(post=>(
+        {posts.map((post) => (
           <div className="max-w-xl border-2 group" key={post.title}>
             <div className="h-40 overflow-hidden">
-              <img src={post.url} alt="" className="group-hover:scale-110 duration-500"/>
+              <img
+                src={post.url}
+                alt=""
+                className="group-hover:scale-110 duration-500"
+              />
             </div>
-            <div>
-              <div>{post.userAvatar}</div>
-              <div>{post.userName}</div>
+            <div className="flex flex-row p-5 justify-between">
+              <div className="flex items-center justify-center gap-3">
+                <div>
+                  <img
+                    src={post.userAvatar}
+                    alt="avatar"
+                    className="w-10 h-10 rounded-full"
+                  />
+                </div>
+                <div className="font-normal text-white text-sm">{post.userName}</div>
+              </div>
+              <div className="font-normal text-white text-sm flex items-center">{post.date}</div>
             </div>
             <div>{post.title}</div>
             <div>{post.paragraph}</div>
