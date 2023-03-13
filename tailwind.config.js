@@ -13,6 +13,7 @@ module.exports = {
         darkLighter: 'hsl(213, 6%, 35%)',
         fontClrGrey: '#999999',
         blackClr: '#101010',
+        mediumBlackClr : '#151515',
         lightBlackClr: '#202020'
       },
       backgroundImage: {
