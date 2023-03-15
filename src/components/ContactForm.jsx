@@ -5,20 +5,20 @@ import ColorButton from './ColorButton'
 const ContactForm = () => {
   return (
     <div className="bg-mediumBlackClr">
-      <h2>Write To Us!</h2>
-      <p>
+      <h2 className="text-4xl lg:text-6xl text-center w-full font-btnFont text-white pb-5 font-normal">Write To Us!</h2>
+      <p className="text-center text-fontClrGrey font-semibold pb-10">
         Laborum accusantium libero commodi id officiis itaque esse adipisci,
         necessitatibus asperiores, illo odio.
       </p>
-      <form action="">
-        <div>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="E-mail" />
+      <form action="" className="max-w-5xl mx-auto flex flex-col gap-5">
+        <div className="flex items-center justify-between gap-5">
+          <input type="text" placeholder="Name"  className="w-full bg-lightBlackClr text-white py-2 px-4 placeholder:text-white"/>
+          <input type="email" placeholder="E-mail" className="w-full bg-lightBlackClr text-white py-2 px-4 placeholder:text-white"/>
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-        <div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message" className=" bg-lightBlackClr text-white py-2 px-4 placeholder:text-white"></textarea>
+        <div className="pt-5 pb-20 flex items-center justify-between">
           <ColorButton text="SEND" link="#"/>
-          <span>*We promise not to disclose your personal information to third parties.</span>
+          <span className="text-fontClrGrey font-normal">*We promise not to disclose your personal information to third parties.</span>
         </div>
       </form>
     </div>
