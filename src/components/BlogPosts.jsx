@@ -64,7 +64,36 @@ const BlogPosts = () => {
         "Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…",
     },
   ];
-  return <div>BlogPosts</div>;
+  return <div>
+    <div className="px-5 pb-10 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto gap-3">
+        {posts.map((post) => (
+          <div className="max-w-xl group" key={post.title}>
+            <div className="h-40 overflow-hidden">
+              <img
+                src={post.url}
+                alt=""
+                className="group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div className="flex flex-row p-5 justify-between">
+              <div className="flex items-center justify-center gap-3">
+                <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center">
+                  <img
+                    src={post.userAvatar}
+                    alt="avatar"
+                    className="w-10 h-10 rounded-full scale-150"
+                  />
+                </div>
+                <div className="font-normal text-white text-sm">{post.userName}</div>
+              </div>
+              <div className="font-normal text-white text-sm flex items-center">{post.date}</div>
+            </div>
+            <div className="text-white font-semibold font-btnFont text-2xl px-5 text-left">{post.title}</div>
+            <div className="font-normal text-lg text-fontClrGrey px-5 text-justify p-5">{post.paragraph}</div>
+          </div>
+        ))}
+      </div>
+  </div>;
 };
 
 export default BlogPosts;
