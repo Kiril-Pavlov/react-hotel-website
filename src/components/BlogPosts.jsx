@@ -1,5 +1,10 @@
 import React from "react";
 
+import img1 from "../assets/newsletter-1.jpg";
+import img2 from "../assets/newsletter-2.jpg";
+import img3 from "../assets/newsletter-3.jpg";
+import avatar1 from "../assets/avatar-1.jpg";
+
 const BlogPosts = () => {
   let posts = [
     {
