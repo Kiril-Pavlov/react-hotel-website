@@ -64,7 +64,7 @@ const BlogPosts = () => {
         "Image for cattle earth. May one Which life divide sea. Commodi soluta minima nemo,…",
     },
   ];
-  return <div>
+  return <div className="py-10 px-5 pb-20 bg-lightBlackClr">
     <div className="px-5 pb-10 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto gap-3">
         {posts.map((post) => (
           <div className="max-w-xl group" key={post.title}>
