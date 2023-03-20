@@ -19,7 +19,8 @@ module.exports = {
       backgroundImage: {
         'hero': "url('/src/assets/home-hero.jpg')",
         'contact':"url('/src/assets/contact-hero.jpg')",
-        'blog':"url('/src/assets/blog-hero.jpg')"
+        'blog':"url('/src/assets/blog-hero.jpg')",
+        'restaurant':"url('/src/assets/restaurant-hero.jpg')"
       },
       keyframes: {
         zoom: {

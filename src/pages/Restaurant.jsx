@@ -1,8 +1,11 @@
 import React from 'react'
+import RestaurantHero from '../components/RestaurantHero'
 
 const Restaurant = () => {
   return (
-    <div>Restaurant</div>
+    <div>
+      <RestaurantHero />
+    </div>
   )
 }
 
