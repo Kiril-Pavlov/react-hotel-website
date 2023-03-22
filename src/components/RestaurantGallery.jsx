@@ -1,4 +1,5 @@
 import React from 'react'
+import RestaurantGallerySlider from './RestaurantGallerySlider'
 
 const RestaurantGallery = () => {
   return (
@@ -10,7 +11,7 @@ const RestaurantGallery = () => {
             Consectetur adipisicing elit. Nihil, illum voluptate eveniet ex fugit ea delectus, sed voluptatem.
         </div>
         <div>
-            
+            <RestaurantGallerySlider />
         </div>
     </div>
   )
