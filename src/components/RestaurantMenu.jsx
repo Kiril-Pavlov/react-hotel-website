@@ -1,6 +1,7 @@
 import React from 'react'
 
 import BorderButton from "./BorderButton"
+import RestaurantMenuSlider from './RestaurantMenuSlider'
 
 const RestaurantMenu = () => {
   return (
@@ -18,7 +19,7 @@ const RestaurantMenu = () => {
         <BorderButton text="full menu" link="/" />
       </div>
       <div className="px-5">
-        
+        <RestaurantMenuSlider />
       </div>
     </div>
   )
