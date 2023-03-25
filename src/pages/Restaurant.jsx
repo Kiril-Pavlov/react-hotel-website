@@ -13,11 +13,8 @@ const Restaurant = () => {
     <div>
       <RestaurantHero />
       <RestaurantAbout />
-      {/* Similar to our best rooms */}
       <RestaurantMenu />
-      {/* Similar to free services */}
       <RestaurantGallery />
-      {/* Similar to Capacity */}
       <RestaurantCapacity />
       <RestaurantStaff />
       <RestaurantVideo />
